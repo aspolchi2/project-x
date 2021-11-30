@@ -1,0 +1,30 @@
+header{
+    .navbar__ul{
+        position: relative;
+        left: 26%;
+        li{
+            margin: 0 1rem;
+        }
+    }
+    .navbardos{
+        background-color: rgb(247, 247, 247);
+        color: white;
+        
+        .navbar__ul{
+            position: relative;
+            left: 26%;
+            font-weight: 300;
+            li{
+            }
+            
+
+        }
+    }
+    .navbartres{
+        .navbar__ul{
+            position: relative;
+            left: 55%;
+            
+        }
+    }
+}
