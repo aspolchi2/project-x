@@ -1,17 +1,17 @@
-main{
+.main{
     .btn-izquierda{
         display: flex;
         flex-direction: column;
         position: fixed;
-        left: 95%;
+        left: 96%;
         top: 10%;
         z-index: 1;
-        width: 5rem;
+        width: 7rem;
         overflow: hidden;
        
         
         a{
-            background-color: green;
+            background-color: #4f4f4f;
             margin-top: 5px;
             transition: .3s all ease-in-out;
             width: 200px;
@@ -32,9 +32,35 @@ main{
         }
     }
     }
-    .video{
-        width: 100%;
-        margin-bottom: 50px;
-    }
     
+    &__nosotros{
+        width: 70%;
+        margin: auto;
+        h1{
+            color: #663366;
+        }
+        
+    }
+    &__servicios{
+        background-color: #4f4f4f;
+        color: #fffad2;
+        
+        
+        .col{
+            width: 16rem;
+            text-align: center;
+            margin: 3rem;
+        }
+    
+        }
+        &__galeria{
+            h2{
+                color: #663366;
+            }
+            .fix{
+                transform: scale(1.5);
+                margin-top: 6rem;
+            }
+        }
+
     }

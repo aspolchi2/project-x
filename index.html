@@ -11,68 +11,11 @@
     <link rel="stylesheet" href="./css/style.css">
 
   </head>
-  
-    <!-- <nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light ">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav navbar__ul">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">GALERIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SERVICIOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand m-3" href="#">LOGO</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">COMO LLEGAR</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-   
-   <!--  <nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light navbartres ">
-      <div class="container-fluid">
-        <a class="navbar-brand m-3" href="#">LOGO</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav navbar__ul">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">GALERIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SERVICIOS</a>
-            </li>
-            <li class="nav-item">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COMO LLEGAR</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-  
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light  navbardos fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark  navbardos fixed-top d-flex">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">LOGO</a>
+          <a class="navbar-brand" href="#"><img src="./img/lostilos-isologo-blanco.png" alt="" class="img-fluid navImg"></a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,32 +23,291 @@
           <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav navbar__ul">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">GALERIA</a>
+                <a class="nav-link inactive home" aria-current="page" href="#">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">SERVICIOS</a>
+                <a class="nav-link " href="#nosotros">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">COMO LLEGAR</a>
+                <a class="nav-link  " href="#servicios">SERVICIOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active">CONTACTO</a>
+                <a class="nav-link  " href="#">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">CONTACTO</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="conteiner"> 
+    <main class="conteiner-fluid main"> 
       <div class="btn-izquierda">
         <a href="https://www.facebook.com"><img src="./img/whatsapp.png" alt=""></a>
         <a href="#"><img src="./img/facebook.png" alt=""></a>
         <a href="#"><img src="./img/instagram-original.png" alt=""></a>
 
       </div>
-      <video src="./img/Pexels Videos 2406638.mp4" class="video" autoplay muted loop></video>
-      <a href="#" class="knil">Link cualquiera</a>
+      <img class="img-fluid front" src="./img/frenteLosTilos.jpg" alt="">
+      
+      <section class="main__nosotros">
+        <h1 class="fs-1 text-center m-5" id="nosotros">Nosotros</h1>
+        <div class="row row-cols-sm-1 row-cols-md-4 g-4 d-flex justify-content-center m-5">
+          <div class="col-12 col-md-6">
+            <div class="col-md-12">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro laboriosam, officia repudiandae fugit possimus, nulla deserunt tenetur vero at minus excepturi quae. Repudiandae eum impedit culpa vero consequuntur alias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ipsam architecto veniam, optio voluptatum, sit inventore magnam porro qui dolore corporis voluptatibus excepturi vero quas blanditiis ipsa voluptas voluptate dolorem.
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nemo quaerat officiis dolore, optio minima. Odit nemo temporibus ullam impedit magnam numquam deleniti, facilis est, nostrum eum nesciunt magni dolorum consectetur voluptatem ipsum unde eos placeat dolorem, reiciendis explicabo optio. Tenetur qui ullam incidunt ratione at fugit obcaecati possimus cum!</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 ">
+            <img src="./img/frenteLosTilos.jpg" class="img-fluid"alt="">
+          </div>
+        </div>
+      </section>
+      <section class="main__servicios">
+        <h2 class="fs-1 text-center color" id="servicios">Servicios</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center articulos">
+          <article class="col">
+            <header>
+              <img src="./img/wifi.svg" alt="" class="img-fluid">
+            </header>
+            <main>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam necessitatibus non rem doloremque laborum labore minus debitis id quos dolore, error totam, inventore quibusdam numquam corporis iure nihil minima!</p>
+            </main>
+          </article>
+          <article class="col">
+            <header>
+              <img src="./img/wifi.svg" alt="" class="img-fluid">
+            </header>
+            <main>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam necessitatibus non rem doloremque laborum labore minus debitis id quos dolore, error totam, inventore quibusdam numquam corporis iure nihil minima!</p>
+            </main>
+          </article>
+          <article class="col">
+            <header>
+              <img src="./img/wifi.svg" alt="" class="img-fluid">
+            </header>
+            <main>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam necessitatibus non rem doloremque laborum labore minus debitis id quos dolore, error totam, inventore quibusdam numquam corporis iure nihil minima!</p>
+            </main>
+          </article>
+          <article class="col">
+            <header>
+              <img src="./img/wifi.svg" alt="" class="img-fluid">
+            </header>
+            <main>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam necessitatibus non rem doloremque laborum labore minus debitis id quos dolore, error totam, inventore quibusdam numquam corporis iure nihil minima!</p>
+            </main>
+          </article>
+      </section>
+      <section class="main__galeria container-fluid">
+        <h2 class="fs-1 text-center color">Galeria</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+          <article class="col">
+            <img src="./img/living-alejado.jpg" alt="" data-bs-target="#livingAlejado" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="livingAlejado" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living-alejado.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/living-diseno-cuarto.jpg" alt="" data-bs-target="#livingDos" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="livingDos" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living-diseno-cuarto.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/living-puerta-abierta.jpg" alt="" data-bs-target="#livingTres" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="livingTres" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living-puerta-abierta.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/living-puerta-cerrada.jpg" alt="" data-bs-target="#livingCuatro" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="livingCuatro" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living-puerta-cerrada.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/living-iluminacion.jpg" alt="" data-bs-target="#livingCinco" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="livingCinco" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living-iluminacion.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/living.jpg" alt="" data-bs-target="#living" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="living" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/living.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/banouno.jpg" alt="" data-bs-target="#banouno" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="banouno" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/banouno.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/banodos.jpg" alt="" data-bs-target="#banodos" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="banodos" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/banodos.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/banitori.jpg" alt="" data-bs-target="#banitori" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="banitori" tabindex="-1">
+            <div class="modal-dialog fix">
+<img src="./img/banitori.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+            <img src="./img/barco-adorno.jpg" alt="" data-bs-target="#barcouno" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="barcouno" tabindex="-1">
+            <div class="modal-dialog fix">
+              <img src="./img/barco-adorno.jpg" alt="" class="w-100  fix">          
+            </div>
+        </div>
+          </article>
+          <article class="col">
+              <img src="./img/barco-madera.jpg" alt="" data-bs-target="#barcodos" data-bs-toggle="modal" class="img-fluid">
+            <div class="modal fade" id="barcodos" tabindex="-1">
+              <div class="modal-dialog fix">
+              <img src="./img/barco-madera.jpg" alt="" class="w-100  fix">          
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <img src="./img/cama-king-diseno.jpg" alt="" data-bs-target="#camaking" data-bs-toggle="modal" class="img-fluid">
+          <div class="modal fade" id="camaking" tabindex="-1">
+            <div class="modal-dialog fix">
+            <img src="./img/cama-king-diseno.jpg" alt="" class="w-100  fix">          
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <img src="./img/cama-king.jpg" alt="" data-bs-target="#camakingdos" data-bs-toggle="modal" class="img-fluid">
+        <div class="modal fade" id="camakingdos" tabindex="-1">
+          <div class="modal-dialog fix">
+          <img src="./img/cama-king.jpg" alt="" class="w-100  fix">          
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <img src="./img/cuarto-doble-diseno.jpg" alt="" data-bs-target="#cuartoDoble" data-bs-toggle="modal" class="img-fluid">
+      <div class="modal fade" id="cuartoDoble" tabindex="-1">
+        <div class="modal-dialog fix">
+        <img src="./img/cuarto-doble-diseno.jpg" alt="" class="w-100  fix">          
+        </div>
+      </div>
+    </article>
+    <article class="col">
+      <img src="./img/cuarto-doble-rosa.jpg" alt="" data-bs-target="#cuartoDobleRosa" data-bs-toggle="modal" class="img-fluid">
+    <div class="modal fade" id="cuartoDobleRosa" tabindex="-1">
+      <div class="modal-dialog fix">
+      <img src="./img/cuarto-doble-rosa.jpg" alt="" class="w-100  fix">          
+      </div>
+    </div>
+  </article>
+  <article class="col">
+    <img src="./img/cuarto-triple-mesita.jpg" alt="" data-bs-target="#cuartoTriple" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cuartoTriple" tabindex="-1">
+    <div class="modal-dialog fix">
+    <img src="./img/cuarto-triple-mesita.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cuarto-triple.jpg" alt="" data-bs-target="#cuartoTripleDos" data-bs-toggle="modal" class="img-fluid">
+<div class="modal fade" id="cuartoTripleDos" tabindex="-1">
+  <div class="modal-dialog fix">
+  <img src="./img/cuarto-triple.jpg" alt="" class="w-100  fix">          
+  </div>
+</div>
+</article>
+<article class="col">
+  <img src="./img/cuarto-violeta.jpg" alt="" data-bs-target="#cuartoTripleV" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cuartoTripleV" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cuarto-violeta.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaUnos.jpg" alt="" data-bs-target="#cocinauno" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinauno" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaUnos.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaDos.jpg" alt="" data-bs-target="#cocinados" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinados" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaDos.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaTres.jpg" alt="" data-bs-target="#cocinatres" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinatres" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaTres.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaCuatro.jpg" alt="" data-bs-target="#cocinaCuatro" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinaCuatro" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaCuatro.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaCinco.jpg" alt="" data-bs-target="#cocinaCinco" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinaCinco" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaCinco.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
+<article class="col">
+  <img src="./img/cocinaSeis.jpg" alt="" data-bs-target="#cocinaSeis" data-bs-toggle="modal" class="img-fluid">
+  <div class="modal fade" id="cocinaSeis" tabindex="-1">
+    <div class="modal-dialog fix">
+  <img src="./img/cocinaSeis.jpg" alt="" class="w-100  fix">          
+    </div>
+  </div>
+</article>
 
+
+
+
+        </div>
+        
+
+      </section>
     </main>
       
     <!-- Bootstrap JavaScript Libraries -->
