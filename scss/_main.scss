@@ -1,37 +1,12 @@
-.main{
-    .btn-izquierda{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        left: 96%;
-        top: 10%;
-        z-index: 1;
-        width: 7rem;
-        overflow: hidden;
-       
-        
-        a{
-            background-color: #4f4f4f;
-            margin-top: 5px;
-            transition: .3s all ease-in-out;
-            width: 200px;
-            transform: translate(20%);
-            border-radius: 10px;
-            &:hover{
-                transform: translateX(-1px);
-                width: 200px;
-                
-            }
-            
-           
+$bg: #fff;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
 
-        
-        img{
-            margin: 0.5rem;
-            height: 1rem;
-        }
-    }
-    }
+.main{
     
     &__nosotros{
         width: 70%;
@@ -47,7 +22,7 @@
         
         
         .col{
-            width: 16rem;
+            width: 10rem;
             text-align: center;
             margin: 3rem;
         }
@@ -57,10 +32,21 @@
             h2{
                 color: #663366;
             }
+           
+           
+                   
+             
+            }
             .fix{
                 transform: scale(1.5);
                 margin-top: 6rem;
             }
+            .btn-galeria{
+                padding: 1rem 1rem;
+                background-color:#663366;
+                border-radius: 10px;
         }
-
-    }
+           
+        
+        }
+    
