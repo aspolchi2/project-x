@@ -1,23 +1,48 @@
-$bg: #fff;
-$text: #382b22;
-$light-pink: #fff0f0;
-$pink: #ffe9e9;
-$dark-pink: #f9c4d2;
-$pink-border: #b18597;
-$pink-shadow: #ffe3e2;
+@import "variables";
 
 .main{
+    .navbardos{
+        background-color: $color-principal;
+        position: sticky;
+        top: 0;
+        height: 30%;
+        .navImg{
+            width: 10rem;
+            margin-left: 3rem;
+        }
+        .navbar__ul{
+            position: relative;
+            font-weight: 300;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 60%;
+            margin: auto;
+           /*  .home{
+                position: absolute;
+                left: -30%;
+            } */
+            li{
+                padding: 1rem;
+                .nav-link{
+                    color: $color-secundario;
+                }
+                
+            }
+            
+        }
+    }
     
     &__nosotros{
         width: 70%;
         margin: auto;
         h1{
-            color: #663366;
+            color: $tituloDos;
         }
         
     }
     &__servicios{
-        background-color: #4f4f4f;
+        background-color: $color-principal;
         color: #fffad2;
         
         
@@ -30,7 +55,7 @@ $pink-shadow: #ffe3e2;
         }
         &__galeria{
             h2{
-                color: #663366;
+                color: $tituloDos;
             }
            
            
@@ -43,8 +68,14 @@ $pink-shadow: #ffe3e2;
             }
             .btn-galeria{
                 padding: 1rem 1rem;
-                background-color:#663366;
+                background-color:$tituloDos;
                 border-radius: 10px;
+        }
+        .achicar{
+            width: 20%;
+            height: 350px;
+            overflow: hidden;
+           
         }
            
         

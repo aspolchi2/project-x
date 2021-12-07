@@ -1,11 +1,19 @@
-header .navbardos {
-  background-color: #4D4D4D;
+header .front {
+  width: 100%;
 }
-header .navbardos .navImg {
+
+.main .navbardos {
+  background-color: #4D4D4D;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 30%;
+}
+.main .navbardos .navImg {
   width: 10rem;
   margin-left: 3rem;
 }
-header .navbardos .navbar__ul {
+.main .navbardos .navbar__ul {
   position: relative;
   font-weight: 300;
   display: flex;
@@ -13,21 +21,17 @@ header .navbardos .navbar__ul {
   justify-content: center;
   width: 60%;
   margin: auto;
+  /*  .home{
+       position: absolute;
+       left: -30%;
+   } */
 }
-header .navbardos .navbar__ul .home {
-  position: absolute;
-  left: -30%;
-}
-header .navbardos .navbar__ul li {
+.main .navbardos .navbar__ul li {
   padding: 1rem;
 }
-header .navbardos .navbar__ul li .nav-link {
+.main .navbardos .navbar__ul li .nav-link {
   color: #fffad2;
 }
-header .navbardos .navbar__ul .vr {
-  color: #fffad2;
-}
-
 .main__nosotros {
   width: 70%;
   margin: auto;
@@ -36,7 +40,7 @@ header .navbardos .navbar__ul .vr {
   color: #663366;
 }
 .main__servicios {
-  background-color: #4f4f4f;
+  background-color: #4D4D4D;
   color: #fffad2;
 }
 .main__servicios .col {
@@ -56,6 +60,11 @@ header .navbardos .navbar__ul .vr {
   background-color: #663366;
   border-radius: 10px;
 }
+.main .achicar {
+  width: 20%;
+  height: 350px;
+  overflow: hidden;
+}
 
 * {
   margin: 0;
@@ -65,5 +74,4 @@ header .navbardos .navbar__ul .vr {
 
 body {
   overflow-x: hidden;
-  margin: auto;
 }/*# sourceMappingURL=style.css.map */
