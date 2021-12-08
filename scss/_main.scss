@@ -54,8 +54,36 @@
     
         }
         &__galeria{
+
             h2{
                 color: $tituloDos;
+                margin: 3rem;
+            }
+            &__habitaciones{
+               width: 80%;
+               margin: auto;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-evenly;
+               .wfix{
+                   width: 438px;
+                   height: 518px;
+                   border-radius: 5px;
+                   box-shadow: 6px 5px 31px -6px rgba(64,46,46,0.44);               }
+               .habitaciones__box{
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   text-align: center;
+                   .servicios__habitaciones{
+                       display: flex;
+                       justify-content: center;
+                       img{
+                            width: 70px;
+                            margin: 0 20px;
+                       }
+                   }
+               }
             }
            
            
