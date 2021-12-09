@@ -110,15 +110,33 @@ header .navbardos .navbar__ul li .nav-link {
 .main__galeria__habitaciones .habitaciones__box .servicios__habitaciones {
   display: flex;
   justify-content: center;
+  margin: 1rem 0;
 }
 .main__galeria__habitaciones .habitaciones__box .servicios__habitaciones img {
   width: 70px;
   margin: 0 20px;
 }
-.main .fix {
+.main__galeria__habitaciones .habitaciones__box .btn-verMas {
+  color: black;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px #4D4D4D solid;
+  width: 30%;
+  text-decoration: none;
+  background-color: #fffad2;
+  font-weight: 600;
+}
+.main__galeria__habitaciones .habitaciones__box .btn-verMas:hover {
+  background: #fffad2;
+  background: linear-gradient(156deg, #fffad2 66%, #4d4d4d 98%);
+}
+
+.fix {
   transform: scale(1.5);
   margin-top: 6rem;
 }
+
 .main__contacto__grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -147,9 +165,12 @@ header .navbardos .navbar__ul li .nav-link {
   width: 98%;
   margin: auto;
 }
-.main__contacto__grid .info .googleMaps {
-  width: 100%;
-  height: 100%;
+.main__contacto .map {
+  width: 60%;
+  margin: auto;
+}
+.main__contacto .map .googleMaps {
+  height: 150px;
   border-radius: 1%;
 }
 
