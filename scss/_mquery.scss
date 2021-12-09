@@ -58,7 +58,13 @@
         }
         
     }
+    &__contacto{
+        &__grid{
+            display: flex;
+            flex-direction: column-reverse;
+    }
 }
 
+}
 }
 }

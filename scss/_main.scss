@@ -1,36 +1,11 @@
 @import "variables";
 
 .main{
-    .navbardos{
-        background-color: $color-principal;
-        position: sticky;
-        top: 0;
-        height: 30%;
-        .navImg{
-            width: 10rem;
-            margin-left: 3rem;
-        }
-        .navbar__ul{
-            position: relative;
-            font-weight: 300;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 60%;
-            margin: auto;
-           /*  .home{
-                position: absolute;
-                left: -30%;
-            } */
-            li{
-                padding: 1rem;
-                .nav-link{
-                    color: $color-secundario;
-                }
-                
-            }
-            
-        }
+    .front{
+        width: 100%;
+    }
+    .frontPhone{
+        display: none;
     }
     
     &__nosotros{
@@ -44,7 +19,10 @@
     }
     &__servicios{
         background-color: $color-principal;
-        color: #fffad2;
+        color: $color-secundario;
+        h2{
+            font-family: $infinite;
+        }
         
         
         .col{
@@ -59,7 +37,7 @@
             h2{
                 color: $tituloDos;
                 margin: 3rem;
-                font-family: $infinite;
+               
 
             }
             &__habitaciones{
@@ -111,18 +89,47 @@
                 transform: scale(1.5);
                 margin-top: 6rem;
             }
-            .btn-galeria{
-                padding: 1rem 1rem;
-                background-color:$tituloDos;
-                border-radius: 10px;
-        }
-        .achicar{
-            width: 20%;
+        &__contacto{
+
+            &__grid{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: "achicar info";
+            width: 60%;
+            margin: auto;
+
+            .achicar{
+            width: 100%;
             height: 350px;
             overflow: hidden;
-           
+            grid-area: achicar;
+
+
+            }
+            .info{
+                grid-area: info;
+                background-color: $color-principal;
+                height: 90%;
+                color: $color-secundario;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1%;
+                p{
+                    width: 98%;
+                    margin: auto;
+                }
+                .googleMaps{
+                   width: 100%;
+                   height: 100%;
+                   border-radius: 1%;
+                }
+            }
+
         }
            
         
         }
+    }
     

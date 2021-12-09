@@ -1,168 +1,142 @@
-header .front {
-  width: 100%;
-}
-
-header .frontPhone {
-  display: none;
-}
-
-.main .navbardos {
+header .navbardos {
   background-color: #4D4D4D;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: 30%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.95;
 }
-
-.main .navbardos .navImg {
+header .navbardos .navImg {
   width: 10rem;
   margin-left: 3rem;
 }
-
-.main .navbardos .navbar__ul {
+header .navbardos .navbar__ul {
   position: relative;
-  font-weight: 300;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-weight: 400;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   width: 60%;
   margin: auto;
   /*  .home{
-                position: absolute;
-                left: -30%;
-            } */
+       position: absolute;
+       left: -30%;
+   } */
 }
-
-.main .navbardos .navbar__ul li {
+header .navbardos .navbar__ul li {
   padding: 1rem;
 }
-
-.main .navbardos .navbar__ul li .nav-link {
+header .navbardos .navbar__ul li .nav-link {
   color: #fffad2;
 }
 
+.main .front {
+  width: 100%;
+}
+.main .frontPhone {
+  display: none;
+}
 .main__nosotros {
   width: 70%;
   margin: auto;
 }
-
 .main__nosotros h1 {
   color: #663366;
   font-family: "Montserrat", sans-serif;
 }
-
 .main__servicios {
   background-color: #4D4D4D;
   color: #fffad2;
 }
-
+.main__servicios h2 {
+  font-family: "Montserrat", sans-serif;
+}
 .main__servicios .col {
   width: 10rem;
   text-align: center;
   margin: 3rem;
 }
-
 .main__galeria h2 {
   color: #663366;
   margin: 3rem;
-  font-family: "Montserrat", sans-serif;
 }
-
 .main__galeria__habitaciones {
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
 .main__galeria__habitaciones .wfix {
   width: 22.8125vw;
-  height: 51.135241855873645vh;
+  height: 51.1352418559vh;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
-  opacity: .79;
+  filter: grayscale(30%);
+  opacity: 0.79;
 }
-
 .main__galeria__habitaciones .wfix:hover {
-  -webkit-transform: translate(0, -5px) scale(1.005);
-          transform: translate(0, -5px) scale(1.005);
-  -webkit-filter: none;
-          filter: none;
+  transform: translate(0, -5px) scale(1.005);
+  filter: none;
   opacity: 1;
-  -webkit-box-shadow: 6px 5px 31px -6px rgba(64, 46, 46, 0.44);
-          box-shadow: 6px 5px 31px -6px rgba(64, 46, 46, 0.44);
+  box-shadow: 6px 5px 31px -6px rgba(64, 46, 46, 0.44);
 }
-
 .main__galeria__habitaciones .habitaciones__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-
 .main__galeria__habitaciones .habitaciones__box .servicios__habitaciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .main__galeria__habitaciones .habitaciones__box .servicios__habitaciones img {
   width: 70px;
   margin: 0 20px;
 }
-
 .main .fix {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   margin-top: 6rem;
 }
-
-.main .btn-galeria {
-  padding: 1rem 1rem;
-  background-color: #663366;
-  border-radius: 10px;
+.main__contacto__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "achicar info";
+  width: 60%;
+  margin: auto;
 }
-
-.main .achicar {
-  width: 20%;
+.main__contacto__grid .achicar {
+  width: 100%;
   height: 350px;
   overflow: hidden;
+  grid-area: achicar;
+}
+.main__contacto__grid .info {
+  grid-area: info;
+  background-color: #4D4D4D;
+  height: 90%;
+  color: #fffad2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1%;
+}
+.main__contacto__grid .info p {
+  width: 98%;
+  margin: auto;
+}
+.main__contacto__grid .info .googleMaps {
+  width: 100%;
+  height: 100%;
+  border-radius: 1%;
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -175,7 +149,6 @@ body {
   font-style: normal;
   font-weight: normal;
 }
-
 .infiniteStroke {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -194,30 +167,23 @@ font-family: 'Playfair Display', serif; */
   body .infiniteStroke {
     font-size: 2rem;
   }
+
   .header .front {
     display: none;
   }
   .header .frontPhone {
     display: block;
   }
+
   .main .navbardos {
     z-index: 1;
     opacity: 0.95;
   }
   .main .navbardos .navbar__ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .main .navbardos li {
     padding: 0;
@@ -236,26 +202,19 @@ font-family: 'Playfair Display', serif; */
     width: 100%;
   }
   .main__galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main__galeria__habitaciones {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main__galeria__habitaciones .wfix {
     width: 100%;
     opacity: 1;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  .main__galeria__contacto__grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=style.css.map */

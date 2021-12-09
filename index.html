@@ -16,10 +16,6 @@
   </head>
   <body>
     <header class="header">
-      <img class="img-fluid front" src="./img/frenteLosTilos.jpg" alt="">
-      <img class="img-fluid frontPhone" src="./img/frenteLosTilos-crop.jpg" alt="">
-    </header>
-    <main class="conteiner-fluid main"> 
       <nav class="navbar navbar-expand-lg navbar-dark  navbardos">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./img/lostilos-isologo-blanco.png" alt="" class="img-fluid navImg"></a>
@@ -51,8 +47,14 @@
         </div>
       </nav>
       
+    </header>
+    <main class="conteiner-fluid main"> 
+      <img class="img-fluid front" src="./img/frenteLosTilos.jpg" alt="">
+      <img class="img-fluid frontPhone" src="./img/frenteLosTilos-crop.jpg" alt="">
+      
+      
       <section class="main__nosotros">
-        <h1 class=" text-center m-5 infiniteStroke" id="nosotros">Nosotros</h1>
+        <h1 class=" text-center m-5 infinite" id="nosotros">Nosotros</h1>
         <div class="row row-cols-sm-1 row-cols-md-4 g-4 d-flex justify-content-center m-5">
           <div class="col-12 col-md-6">
             <div class="col-md-12">
@@ -70,7 +72,7 @@
         </div>
       </section>
       <section class="main__servicios pt-3">
-        <h2 class="text-center color infiniteStroke mt-5 pb-5" id="servicios">Servicios</h2>
+        <h2 class="text-center infinite mt-5 pb-5" id="servicios">Servicios</h2>
         <div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center articulos">
           <article class="col">
             <header>
@@ -107,7 +109,7 @@
         </div>
       </section>
       <section class="main__galeria container-fluid">
-        <h2 class="text-center color infiniteStroke">Nuestras habitaciones</h2>
+        <h2 class="text-center color infinite">Nuestras habitaciones</h2>
        <div class="main__galeria__habitaciones">
          <div class="habitaciones__box">
            <div>
@@ -143,24 +145,6 @@
            </div>
            <div class="servicios__habitaciones">
              <img src="./img/wifi.svg" alt="" class="img-fluid"><img src="./img/wifi.svg" alt="./img/wifi.svg" class="img-fluid"><img src="./img/wifi.svg" alt="" class="img-fluid">
-           </div>
-           <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver fotos</a>
-        </div>
-        <div class="habitaciones__box">
-          <div>
-            <img src="./img/cuarto-triple-crop.jpg" alt="" data-bs-target="#cuartoTriple" data-bs-toggle="modal" class="img-fluid wfix">
-            <div class="modal fade" id="cuartoTriple" tabindex="-1">
-                <div class="modal-dialog fix">
-    <img src="./img/cuarto-triple.jpg" alt="" class="w-100  fix">          
-                </div>
-            </div>      
-          </div>
-          
-           <div class="">
-             <p>habitacion triple</p>
-           </div>
-           <div class="servicios__habitaciones">
-             <img src="./img/wifi.svg" alt= class="img-fluid"><img src="./img/wifi.svg" alt="./img/wifi.svg" class="img-fluid"><img src="./img/wifi.svg" alt="" class="img-fluid">
            </div>
            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver fotos</a>
         </div>
@@ -287,7 +271,10 @@
 </div>
       </section>
 
-<!--       <div class="achicar">
+      <section class="main__contacto">
+        <h2 class="text-center infiniteStroke mt-5 mb-5">Contactenos</h2>
+        <div class="main__contacto__grid">
+       <div class="achicar">
       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script style="height: 300px;">
   hbspt.forms.create({
@@ -297,7 +284,14 @@
 });
 </script>
 </div>
- -->    </main>
+<div class="info">
+  <p><img src="./img/map-marker-2-16.png" alt=""> El Salmon 1365 - Monte hermoso - Buenos aires - Argentina</p>
+  <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4974888987467!2d-61.325826984894455!3d-38.981140909506514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958d52b58094d681%3A0x6b83ff7e28295756!2sDel%20Salmon%201365%2C%20Monte%20Hermoso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1639056812695!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+</section>
+
+ </main>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
