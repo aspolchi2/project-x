@@ -38,6 +38,7 @@
         margin: auto;
         h1{
             color: $tituloDos;
+            font-family: $infinite;
         }
         
     }
@@ -58,6 +59,8 @@
             h2{
                 color: $tituloDos;
                 margin: 3rem;
+                font-family: $infinite;
+
             }
             &__habitaciones{
                width: 80%;
