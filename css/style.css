@@ -159,34 +159,34 @@ body {
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
-@media (min-width: 360px) and (max-width: 991.98px) {
+@media (min-width: 320px) and (max-width: 991.98px) {
   body {
     width: 100%;
     overflow-x: hidden;
   }
-  body .infiniteStroke {
+  body .infinite {
     font-size: 2rem;
   }
 
-  .header .front {
-    display: none;
-  }
-  .header .frontPhone {
-    display: block;
-  }
-
-  .main .navbardos {
+  .header .navbardos {
     z-index: 1;
     opacity: 0.95;
   }
-  .main .navbardos .navbar__ul {
+  .header .navbardos .navbar__ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .main .navbardos li {
+  .header .navbardos li {
     padding: 0;
+  }
+
+  .main .front {
+    display: none;
+  }
+  .main .frontPhone {
+    display: block;
   }
   .main__servicios .row {
     margin-left: 0;
@@ -213,8 +213,22 @@ font-family: 'Playfair Display', serif; */
     width: 100%;
     opacity: 1;
   }
-  .main__galeria__contacto__grid {
+  .main__contacto {
+    width: 100%;
+  }
+  .main__contacto h2 {
+    font-size: 2rem;
+  }
+  .main__contacto__grid {
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column-reverse;
+  }
+  .main__contacto__grid .info {
+    margin: 1rem 0;
+  }
+  .main__contacto__grid .info .googleMaps {
+    margin: 1rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

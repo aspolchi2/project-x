@@ -1,21 +1,12 @@
-@media (min-width: 360px) and (max-width: 991.98px) {   
+@media (min-width: 320px) and (max-width: 991.98px) {   
     body{
         width: 100%;
         overflow-x: hidden;
-        .infiniteStroke{
+        .infinite{
             font-size: 2rem;
         }
     }  
     .header{
-        .front{
-            display: none;
-        }
-        .frontPhone{
-            display: block;
-        }
-    }
- 
-    .main{
         .navbardos{
             z-index: 1;
             opacity: 0.95;
@@ -30,6 +21,17 @@
             }
             
         }
+        
+    }
+ 
+    .main{
+        .front{
+            display: none;
+        }
+        .frontPhone{
+            display: block;
+        }
+        
     &__servicios{
         .row{
             margin-left: 0;
@@ -58,13 +60,27 @@
         }
         
     }
+}
     &__contacto{
+        width: 100%;
+        h2{
+            font-size: 2rem;
+        }
         &__grid{
+            margin: auto;
+            
+            width: 90%;
             display: flex;
             flex-direction: column-reverse;
+            .info{
+                margin: 1rem 0;
+            .googleMaps{
+                margin: 1rem 0;
+            }
+        }
     }
 }
 
-}
+
 }
 }
