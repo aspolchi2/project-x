@@ -66,10 +66,24 @@
                flex-direction: row;
                justify-content: space-evenly;
                .wfix{
-                   width: 438px;
-                   height: 518px;
+                   width: 22.8125vw;
+                   height: 51.135241855873645vh;
                    border-radius: 5px;
-                   box-shadow: 6px 5px 31px -6px rgba(64,46,46,0.44);               }
+                   cursor: pointer;    
+                   transition: all 1s ease-in-out;
+                   filter: grayscale(30%);
+                   opacity: .79;
+                   &:hover{
+                       transform: translate(0, -5px)
+                       scale(1.005);
+                       filter: none;
+                       opacity: 1;
+                       box-shadow: 6px 5px 31px -6px rgba(64,46,46,0.44);  
+
+                       
+                   }
+                
+                }
                .habitaciones__box{
                    display: flex;
                    flex-direction: column;

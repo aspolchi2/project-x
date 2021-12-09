@@ -2,6 +2,10 @@ header .front {
   width: 100%;
 }
 
+header .frontPhone {
+  display: none;
+}
+
 .main .navbardos {
   background-color: #4D4D4D;
   position: -webkit-sticky;
@@ -85,9 +89,23 @@ header .front {
 }
 
 .main__galeria__habitaciones .wfix {
-  width: 438px;
-  height: 518px;
+  width: 22.8125vw;
+  height: 51.135241855873645vh;
   border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  opacity: .79;
+}
+
+.main__galeria__habitaciones .wfix:hover {
+  -webkit-transform: translate(0, -5px) scale(1.005);
+          transform: translate(0, -5px) scale(1.005);
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
   -webkit-box-shadow: 6px 5px 31px -6px rgba(64, 46, 46, 0.44);
           box-shadow: 6px 5px 31px -6px rgba(64, 46, 46, 0.44);
 }
@@ -147,5 +165,61 @@ header .front {
 
 body {
   overflow-x: hidden;
+}
+
+@media (min-width: 360px) and (max-width: 991.98px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .header .front {
+    display: none;
+  }
+  .header .frontPhone {
+    display: block;
+  }
+  .main .navbardos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    z-index: 1;
+  }
+  .main .navbardos li {
+    padding: 0;
+  }
+  .main__servicios .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main__nosotros {
+    width: 100%;
+  }
+  .main__galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__galeria__habitaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__galeria__habitaciones .wfix {
+    width: 100%;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

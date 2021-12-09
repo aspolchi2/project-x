@@ -1,0 +1,50 @@
+@media (min-width: 360px) and (max-width: 991.98px) {   
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }  
+    .header{
+        .front{
+            display: none;
+        }
+        .frontPhone{
+            display: block;
+        }
+    }
+ 
+    .main{
+        .navbardos{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            z-index: 1;
+            li{
+                padding: 0;
+            }
+            
+        }
+    &__servicios{
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__nosotros{
+        width: 100%;
+    }
+    &__galeria{
+        display: flex;
+        flex-direction: column;
+    &__habitaciones{
+        display: flex;
+        flex-direction: column;
+        .wfix{
+            width: 100%;
+            opacity: 1;
+        }
+        
+    }
+}
+
+}
+}
