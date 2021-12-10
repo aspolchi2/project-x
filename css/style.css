@@ -146,7 +146,7 @@ header .navbardos .navbar__ul li .nav-link {
   margin: auto;
 }
 .main__contacto__grid .achicar {
-  width: 100%;
+  width: 70%;
   height: 350px;
   overflow: hidden;
   grid-area: achicar;
@@ -236,8 +236,8 @@ font-family: 'Playfair Display', serif; */
     overflow-x: hidden;
   }
   .main .video {
-    width: 99%;
-    height: 100vh;
+    margin-top: 20vh;
+    width: 100%;
     overflow: hidden;
   }
   .main .frontPhone {
