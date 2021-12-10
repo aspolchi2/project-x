@@ -10,11 +10,20 @@
     }
     
     &__nosotros{
-        width: 70%;
+        width: 80%;
         margin: auto;
         h1{
             color: $tituloDos;
             font-family: $infinite;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: row;
+            .parrafos{
+                width: 80%;
+                margin: auto;
+            }
+
         }
         
     }
@@ -25,6 +34,11 @@
         h2{
             font-family: $infinite;
         }
+        .ordenar{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         .servicio{
             text-align: center;
             display: flex;
@@ -32,7 +46,7 @@
             justify-content: center;
             align-items: center;
             width: 300px;
-            
+
             
         .circulo{
             width: 100px;
@@ -50,6 +64,7 @@
         p{
            white-space: pre;
         }
+    }
            
             .fit{
                 width: 48px;
@@ -59,18 +74,6 @@
             }
         }
         
-        
-        .col{
-            
-            width: 10rem;
-            text-align: center;
-            margin: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
     
         }
         &__galeria{

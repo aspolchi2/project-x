@@ -37,12 +37,20 @@ header .navbardos .navbar__ul li .nav-link {
   display: none;
 }
 .main__nosotros {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 .main__nosotros h1 {
   color: #663366;
   font-family: "Gobold", sans-serif;
+}
+.main__nosotros__texto {
+  display: flex;
+  flex-direction: row;
+}
+.main__nosotros__texto .parrafos {
+  width: 80%;
+  margin: auto;
 }
 .main__servicios {
   background-color: #4D4D4D;
@@ -51,7 +59,13 @@ header .navbardos .navbar__ul li .nav-link {
 .main__servicios h2 {
   font-family: "Gobold", sans-serif;
 }
-.main__servicios .servicio {
+.main__servicios .ordenar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__servicios .ordenar .servicio {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -59,7 +73,7 @@ header .navbardos .navbar__ul li .nav-link {
   align-items: center;
   width: 300px;
 }
-.main__servicios .servicio .circulo {
+.main__servicios .ordenar .servicio .circulo {
   width: 100px;
   height: 100px;
   background-color: #663366;
@@ -69,26 +83,17 @@ header .navbardos .navbar__ul li .nav-link {
   justify-content: center;
   align-items: center;
 }
-.main__servicios .servicio .circulo img {
+.main__servicios .ordenar .servicio .circulo img {
   width: 72px;
 }
-.main__servicios .servicio p {
+.main__servicios .ordenar .servicio p {
   white-space: pre;
 }
-.main__servicios .servicio .fit {
+.main__servicios .ordenar .fit {
   width: 48px;
 }
-.main__servicios .servicio .bajar {
+.main__servicios .ordenar .bajar {
   padding: 3px;
-}
-.main__servicios .col {
-  width: 10rem;
-  text-align: center;
-  margin: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main__galeria h2 {
   color: #663366;
@@ -257,21 +262,20 @@ font-family: 'Playfair Display', serif; */
   .main .frontPhone {
     display: none;
   }
-  .main__servicios .row {
-    margin-left: 0;
-    margin-right: 0;
-    width: 99%;
+  .main__nosotros__texto {
+    display: flex;
+    flex-direction: column;
   }
-  .main__servicios .row .servicios {
+  .main__servicios .ordenar .servicio {
     width: 200px;
   }
-  .main__nosotros {
+  .main__nosotros__texto {
     width: 100%;
   }
-  .main__nosotros .esconder {
+  .main__nosotros__texto .esconder {
     display: none;
   }
-  .main__nosotros .img-fluid {
+  .main__nosotros__texto .img-fluid {
     width: 100%;
   }
   .main__galeria {
