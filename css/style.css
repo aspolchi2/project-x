@@ -282,10 +282,18 @@ font-family: 'Playfair Display', serif; */
     display: flex;
     flex-direction: column-reverse;
   }
+  .main__contacto__grid .achicar {
+    width: 90%;
+  }
   .main__contacto__grid .info {
     margin: 1rem 0;
   }
-  .main__contacto__grid .info .googleMaps {
-    margin: 1rem 0;
+  .main__contacto .map {
+    width: 90%;
+    margin: auto;
+  }
+  .main__contacto .map .googleMaps {
+    width: 90%;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

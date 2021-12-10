@@ -73,6 +73,9 @@
             font-size: 2rem;
         }
         &__grid{
+            .achicar{
+                width: 90%;
+            }
             margin: auto;
             
             width: 90%;
@@ -80,9 +83,15 @@
             flex-direction: column-reverse;
             .info{
                 margin: 1rem 0;
-            .googleMaps{
-                margin: 1rem 0;
+            
             }
+        }
+        .map{
+            width: 90%;
+            margin: auto;
+        .googleMaps{
+            width: 90%;
+            margin: 0;
         }
     }
 }
