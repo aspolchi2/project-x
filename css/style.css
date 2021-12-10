@@ -29,8 +29,9 @@ header .navbardos .navbar__ul li .nav-link {
   color: #fffad2;
 }
 
-.main .front {
+.main .video {
   width: 100%;
+  margin: auto;
 }
 .main .frontPhone {
   display: none;
@@ -41,14 +42,14 @@ header .navbardos .navbar__ul li .nav-link {
 }
 .main__nosotros h1 {
   color: #663366;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gobold", sans-serif;
 }
 .main__servicios {
   background-color: #4D4D4D;
   color: #fffad2;
 }
 .main__servicios h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gobold", sans-serif;
 }
 .main__servicios .circulo {
   width: 100px;
@@ -172,6 +173,7 @@ header .navbardos .navbar__ul li .nav-link {
 .main__contacto .map .googleMaps {
   height: 150px;
   border-radius: 1%;
+  border: 1px solid black;
 }
 
 * {
@@ -190,9 +192,15 @@ body {
   font-style: normal;
   font-weight: normal;
 }
-.infiniteStroke {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+@font-face {
+  font-family: "Gobold";
+  src: url("../Gobold-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.gobold {
+  font-family: "Gobold";
+  font-weight: 400;
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 5rem;
@@ -223,15 +231,22 @@ font-family: 'Playfair Display', serif; */
     padding: 0;
   }
 
-  .main .front {
-    display: none;
+  .main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .main .video {
+    width: 99%;
+    height: 100vh;
+    overflow: hidden;
   }
   .main .frontPhone {
-    display: block;
+    display: none;
   }
   .main__servicios .row {
     margin-left: 0;
     margin-right: 0;
+    width: 99%;
   }
   .main__nosotros {
     width: 100%;
@@ -247,6 +262,7 @@ font-family: 'Playfair Display', serif; */
     flex-direction: column;
   }
   .main__galeria__habitaciones {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }

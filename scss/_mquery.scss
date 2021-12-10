@@ -25,17 +25,22 @@
     }
  
     .main{
-        .front{
-            display: none;
+        width: 100%;
+        overflow-x: hidden;
+        .video{
+            width: 99%;
+            height: 100vh;
+            overflow: hidden;
         }
         .frontPhone{
-            display: block;
+            display: none;
         }
         
     &__servicios{
         .row{
             margin-left: 0;
             margin-right: 0;
+            width: 99%;
         }
     }
     &__nosotros{
@@ -52,6 +57,7 @@
         display: flex;
         flex-direction: column;
     &__habitaciones{
+        width: 100%;
         display: flex;
         flex-direction: column;
         .wfix{
