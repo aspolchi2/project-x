@@ -147,7 +147,7 @@ header .navbardos .navbar__ul li .nav-link {
 }
 .main__contacto__grid .achicar {
   width: 70%;
-  height: 350px;
+  height: 430px;
   overflow: hidden;
   grid-area: achicar;
 }
