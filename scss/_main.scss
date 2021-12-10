@@ -20,20 +20,36 @@
     }
     &__servicios{
         background-color: $color-principal;
-        color: $color-secundario;
+        color: white;
 
         h2{
             font-family: $infinite;
         }
+        .servicio{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            
+            
         .circulo{
             width: 100px;
             height: 100px;
-            background-color: $color-secundario;
+            background-color: $tituloDos;
             border-radius: 50%;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
+            img{
+                width: 72px;
+            }
+        }
+        p{
+           white-space: pre;
+        }
            
             .fit{
                 width: 48px;

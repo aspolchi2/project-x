@@ -46,25 +46,39 @@ header .navbardos .navbar__ul li .nav-link {
 }
 .main__servicios {
   background-color: #4D4D4D;
-  color: #fffad2;
+  color: white;
 }
 .main__servicios h2 {
   font-family: "Gobold", sans-serif;
 }
-.main__servicios .circulo {
+.main__servicios .servicio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.main__servicios .servicio .circulo {
   width: 100px;
   height: 100px;
-  background-color: #fffad2;
+  background-color: #663366;
   border-radius: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__servicios .circulo .fit {
+.main__servicios .servicio .circulo img {
+  width: 72px;
+}
+.main__servicios .servicio p {
+  white-space: pre;
+}
+.main__servicios .servicio .fit {
   width: 48px;
 }
-.main__servicios .circulo .bajar {
+.main__servicios .servicio .bajar {
   padding: 3px;
 }
 .main__servicios .col {
@@ -247,6 +261,9 @@ font-family: 'Playfair Display', serif; */
     margin-left: 0;
     margin-right: 0;
     width: 99%;
+  }
+  .main__servicios .row .servicios {
+    width: 200px;
   }
   .main__nosotros {
     width: 100%;
