@@ -151,8 +151,7 @@ header .navbardos .navbar__ul li .nav-link {
   background: #fffad2;
   background: linear-gradient(156deg, #fffad2 66%, #4d4d4d 98%);
 }
-
-.fix {
+.main .fix {
   transform: scale(1.5);
   margin-top: 6rem;
 }
@@ -267,7 +266,7 @@ font-family: 'Playfair Display', serif; */
     flex-direction: column;
   }
   .main__servicios .ordenar .servicio {
-    width: 200px;
+    width: 150px;
   }
   .main__nosotros__texto {
     width: 100%;
@@ -288,8 +287,11 @@ font-family: 'Playfair Display', serif; */
     flex-direction: column;
   }
   .main__galeria__habitaciones .wfix {
-    width: 100%;
+    width: 95%;
     opacity: 1;
+  }
+  .main__galeria .fix {
+    transform: scale(1.1);
   }
   .main__contacto {
     width: 100%;

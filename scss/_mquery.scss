@@ -46,7 +46,7 @@
     &__servicios{
         .ordenar{
             .servicio{
-                width: 200px;
+                width: 150px;
             }
         }
     }
@@ -73,10 +73,13 @@
         display: flex;
         flex-direction: column;
         .wfix{
-            width: 100%;
+            width: 95%;
             opacity: 1;
         }
         
+    }
+    .fix{
+        transform: scale(1.1);
     }
 }
     &__contacto{
