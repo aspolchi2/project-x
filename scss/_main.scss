@@ -10,7 +10,7 @@
     }
     
     &__nosotros{
-        width: 80%;
+        width: 85%;
         margin: auto;
         h1{
             color: $tituloDos;
@@ -30,6 +30,7 @@
     &__servicios{
         background-color: $color-principal;
         color: white;
+        
 
         h2{
             font-family: $infinite;
@@ -38,14 +39,16 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: auto;
         .servicio{
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 300px;
+            width: 21.961932650073205vw;
 
             
         .circulo{
@@ -158,13 +161,13 @@
 
             &__grid{
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: "achicar info";
             width: 60%;
             margin: auto;
 
             .achicar{
-            width: 70%;
+            width: 80%;
             height: 430px;
             overflow: hidden;
             grid-area: achicar;
@@ -181,8 +184,9 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 1%;
+                
                 p{
-                    width: 98%;
+                    width: 85%;
                     margin: auto;
                 }
                 
@@ -193,7 +197,7 @@
                 width: 60%;
                 margin: auto;
             .googleMaps{
-                height: 150px;
+                height: 300px;
                 border-radius: 1%;
                 border: 1px solid black;
              }

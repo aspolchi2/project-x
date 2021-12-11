@@ -7,15 +7,17 @@ header .navbardos {
 }
 header .navbardos .navImg {
   width: 10rem;
-  margin-left: 3rem;
+  position: absolute;
+  top: 1vh;
+  left: 8.0527086384vw;
 }
 header .navbardos .navbar__ul {
   position: relative;
   font-weight: 400;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 60%;
+  justify-content: end;
+  width: 85%;
   margin: auto;
   /*  .home{
        position: absolute;
@@ -37,7 +39,7 @@ header .navbardos .navbar__ul li .nav-link {
   display: none;
 }
 .main__nosotros {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 .main__nosotros h1 {
@@ -63,7 +65,9 @@ header .navbardos .navbar__ul li .nav-link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
 }
 .main__servicios .ordenar .servicio {
   text-align: center;
@@ -71,7 +75,7 @@ header .navbardos .navbar__ul li .nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 21.9619326501vw;
 }
 .main__servicios .ordenar .servicio .circulo {
   width: 100px;
@@ -158,13 +162,13 @@ header .navbardos .navbar__ul li .nav-link {
 
 .main__contacto__grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "achicar info";
   width: 60%;
   margin: auto;
 }
 .main__contacto__grid .achicar {
-  width: 70%;
+  width: 80%;
   height: 430px;
   overflow: hidden;
   grid-area: achicar;
@@ -181,7 +185,7 @@ header .navbardos .navbar__ul li .nav-link {
   border-radius: 1%;
 }
 .main__contacto__grid .info p {
-  width: 98%;
+  width: 85%;
   margin: auto;
 }
 .main__contacto .map {
@@ -189,7 +193,7 @@ header .navbardos .navbar__ul li .nav-link {
   margin: auto;
 }
 .main__contacto .map .googleMaps {
-  height: 150px;
+  height: 300px;
   border-radius: 1%;
   border: 1px solid black;
 }
