@@ -7,7 +7,33 @@
 body{
  width: 100%;
  margin: auto;
+ 
 
+}
+.contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width: 10px;
+    background-color: $color-principal;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: #b8b6b6;
+    border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
 @font-face {
     font-family: "infinite_stroke";

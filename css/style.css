@@ -37,7 +37,7 @@ header .navbardos .navbar__ul li .nav-link {
   position: fixed;
   bottom: 0;
   left: 95%;
-  width: 3rem;
+  width: 4rem;
 }
 .main .video {
   width: 100%;
@@ -199,6 +199,32 @@ header .navbardos .navbar__ul li .nav-link {
 body {
   width: 100%;
   margin: auto;
+}
+
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width: 10px;
+  background-color: #4D4D4D;
+}
+
+.contenedor::-webkit-scrollbar-button:increment, .contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #b8b6b6;
+  border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 @font-face {
