@@ -39,10 +39,10 @@
                 <a class="nav-link  " href="#servicios">SERVICIOS </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  " href="#">GALERIA </a>
+                <a class="nav-link  " href="#galeria">GALERIA </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">CONTACTO </a>
+                <a class="nav-link " href="#contacto">CONTACTO </a>
               </li>
             </ul>
           </div>
@@ -51,12 +51,13 @@
       
     </header>
     <main class="conteiner-fluid main"> 
+      <img src="./pictos/icons8-whatsapp-48.png" class="whatsapp" alt="">
      <video class="video img-fluid" src="./img/videoFront.mp4" autoplay="1" muted="1" loop="1" ></video>
-      <img class="img-fluid frontPhone" src="./img/frenteLosTilos-crop.jpg" alt="">
+     <span id="nosotros" class="scroll"></span>
       
       
       <section class="main__nosotros">
-        <h1 class=" text-center m-5 gobold" id="nosotros">Nosotros</h1>
+        <h1 class=" text-center m-5 gobold">Nosotros</h1>
         
           <div class="main__nosotros__texto">
             <div class="parrafos">
@@ -71,10 +72,10 @@
             <img src="./img/fotos-polaroid.png" class="img-fluid" alt="">
           </div>
         </div>
-        
+        <span id="servicios" class="id"></span>
       </section>
       <section class="main__servicios pt-3 pb-3 ">
-        <h2 class="text-center gobold mt-5 pb-5" id="servicios">Servicios</h2>
+        <h2 class="text-center gobold mt-5 pb-5">Servicios</h2>
         <div class="ordenar mb-5">
           <div class="servicio">
             <div class="circulo">
@@ -164,47 +165,14 @@ en todos los ambientes</p>
         </div>
       </section>
       <section class="main__galeria container-fluid">
+        <span id="galeria" class="scroll"></span>
         <h2 class="text-center color gobold">Nuestras habitaciones</h2>
        <div class="main__galeria__habitaciones">
-         <div class="habitaciones__box">
-           <div>
-            <img src="./img/cama-king-diseno-crop.jpg" alt="" data-bs-target="#camadiseno" data-bs-toggle="modal" class="img-fluid wfix">
-            <div class="modal fade" id="camadiseno" tabindex="-1">
-                <div class="modal-dialog fix">
-    <img src="./img/cama-king-diseno.jpg" alt="" class="w-100  fix">          
-                </div>
-            </div>      
-          
-          </div>
-            <div class="">
-              <p class="fs-5">habitacion matrimonial</p>
-            </div>
-            <div class="servicios__habitaciones">
-              <img src="./img/wifi_black_24dp.svg" alt="" class="img-fluid">
-              <img src="./img/icons8-air-conditioner-50.png" alt="" class="img-fluid">
-              <img src="./img/tv_black_24dp.svg" alt="" class="img-fluid">
-            </div>
-            <a  class="btn-verMas" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver fotos</a>
+         <div class="img__box">
+           <img src="./img/cama-king-diseno-crop.jpg" class="img-fluid" alt="">
+           <div class="img__box__texto"> <p class="fs-3">Matrimonial</p></div>
+           
          </div>
-         <div class="habitaciones__box">
-          <div>
-            <img src="./img/cuarto-doble-rosa-crop.jpg" alt="" data-bs-target="#cuartoRosa" data-bs-toggle="modal" class="img-fluid wfix">
-            <div class="modal fade" id="cuartoRosa" tabindex="-1">
-                <div class="modal-dialog fix">
-    <img src="./img/cuarto-doble-rosa.jpg" alt="" class="w-100  fix">          
-                </div>
-            </div>      
-          </div>
-           <div class="">
-             <p class="fs-5">habitacion doble</p>
-           </div>
-           <div class="servicios__habitaciones">
-            <img src="./img/wifi_black_24dp.svg" alt="" class="img-fluid">
-            <img src="./img/icons8-air-conditioner-50.png" alt="" class="img-fluid">
-            <img src="./img/tv_black_24dp.svg" alt="" class="img-fluid">
-           </div>
-           <a class="btn-verMas" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver fotos</a>
-        </div>
        </div>
 
 
@@ -329,6 +297,7 @@ en todos los ambientes</p>
       </section>
 
       <section class="main__contacto">
+        <span id="contacto" class="scroll"></span>
         <h2 class="text-center gobold mt-5 mb-5">Contactenos</h2>
         <div class="main__contacto__grid">
        <div class="achicar">
@@ -341,9 +310,9 @@ en todos los ambientes</p>
         });
         </script></div>
 <div class="info">
-  <p><img src="./img/map-marker-2-16.png" alt=""> El Salmon 1365 - Monte hermoso - <br> Buenos aires - Argentina</p>
-  <p><img src="./img/check_white_24dp.svg" alt=""> Check-in: ???</p>
-  <p><img src="./img/logout_white_24dp.svg" alt=""> Check-out: ???</p>
+  <p><img src="./img/map-marker-2-16.png" alt=""> Del Salmon 1365 - Monte hermoso - <br> Buenos aires - Argentina</p>
+  <p><img src="./img/check_white_24dp.svg" alt=""> Check-in: 15:00 hs</p>
+  <p><img src="./img/logout_white_24dp.svg" alt=""> Check-out: 11:00 hs</p>
   <p><img src="./img/block_white_24dp.svg" alt=""> Prohibido el ingreso con mascotas</p>
 
   <p><img src="./img/apartment_white_24dp.svg" alt=""> Abierto todo el año</p>
@@ -356,6 +325,10 @@ en todos los ambientes</p>
 </section>
 
  </main>
+ <footer class="footer">
+
+
+ </footer>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
