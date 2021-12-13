@@ -3,7 +3,7 @@
     background-color: $color-principal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15vh;
+    grid-template-rows: 20vh;
     grid-template-areas: "copy logo redes";
     overflow-x: hidden;
     justify-content: center;
@@ -14,10 +14,10 @@
     .copy{
         grid-area: copy;
         color: white;
-        margin:auto;
+        margin: 1rem auto;
         text-align: center;
         p{
-            font-size: 8px;
+            font-size: 12px;
         }
         .diff{
             color: $color-secundario;
@@ -25,7 +25,7 @@
     }
     .logo{
         grid-area: logo;
-        margin: auto;
+        margin: 1rem auto;
         img{
             height: 15vh;
         }
@@ -40,6 +40,7 @@
         left: 45%;
         overflow: hidden;
         width: 35%;
+        margin: 1rem auto;
         
         
         img{

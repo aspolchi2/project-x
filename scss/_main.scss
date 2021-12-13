@@ -137,9 +137,11 @@
                 .img__box{
                     position: relative;
                     .efecto{
-                        transition: all .3s ease-in-out;
+                        filter: grayscale(.5);
+                        transition: all .6s ease-in-out;
                         &:hover{
-                            filter: blur(3px);
+                            filter: grayscale(0)
+                            brightness(1.2);
                         }
                     }
                     .cuadrado{
