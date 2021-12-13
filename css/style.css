@@ -474,7 +474,7 @@ font-family: 'Playfair Display', serif; */
   }
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1400px) {
   .main__servicios .ordenar .servicio {
     width: 350px;
   }
