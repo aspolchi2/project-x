@@ -28,7 +28,6 @@
         width: 100%;
         overflow-x: hidden;
         .video{
-            margin-top: 14vh;
             width: 100%;
             overflow: hidden;
         }
@@ -114,6 +113,15 @@
 
 }
 }
+@media (min-width: 992px) and (max-width: 1399.98px){
+    .footer{
+        .redes{
+            width: 100%;
+            
+        }
+    }
+}
+
 @media (min-width: 1400px){
     .main{
         &__servicios{

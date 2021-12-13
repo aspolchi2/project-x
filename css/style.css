@@ -28,7 +28,7 @@ header .navbardos .navbar__ul {
    } */
 }
 header .navbardos .navbar__ul li {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 header .navbardos .navbar__ul li .nav-link {
   color: #fffad2;
@@ -42,12 +42,14 @@ header .navbardos .navbar__ul li .nav-link {
   width: 4rem;
 }
 .main .video {
+  position: relative;
+  bottom: 10vh;
   width: 100%;
-  margin-top: 2vh;
+  margin: 0;
 }
 .main .scroll {
   position: relative;
-  bottom: 4rem;
+  bottom: 2rem;
 }
 .main__nosotros {
   width: 80%;
@@ -67,7 +69,7 @@ header .navbardos .navbar__ul li .nav-link {
 }
 .main__nosotros .id {
   position: relative;
-  bottom: 4rem;
+  bottom: 2rem;
 }
 .main__servicios {
   background-color: #4D4D4D;
@@ -111,12 +113,6 @@ header .navbardos .navbar__ul li .nav-link {
 .main__servicios .ordenar .servicio p {
   white-space: pre;
 }
-.main__servicios .ordenar .fit {
-  width: 48px;
-}
-.main__servicios .ordenar .bajar {
-  padding: 3px;
-}
 .main__galeria .scroll {
   position: relative;
   bottom: 6rem;
@@ -156,15 +152,21 @@ header .navbardos .navbar__ul li .nav-link {
 .main__galeria__habitaciones .img__box {
   position: relative;
 }
+.main__galeria__habitaciones .img__box .efecto {
+  transition: all 0.3s ease-in-out;
+}
+.main__galeria__habitaciones .img__box .efecto:hover {
+  filter: blur(3px);
+}
 .main__galeria__habitaciones .img__box .cuadrado {
   background-color: #663366;
   color: white;
 }
 .main__galeria__habitaciones .img__box__texto {
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
 }
 .main__galeria__habitaciones li {
   margin: 1vh 0;
@@ -285,11 +287,18 @@ font-family: 'Playfair Display', serif; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 15vh;
   grid-template-areas: "copy logo redes";
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
 .footer .copy {
   grid-area: copy;
   color: white;
   margin: auto;
+  text-align: center;
+}
+.footer .copy p {
+  font-size: 8px;
 }
 .footer .copy .diff {
   color: #fffad2;
@@ -348,7 +357,6 @@ font-family: 'Playfair Display', serif; */
     overflow-x: hidden;
   }
   .main .video {
-    margin-top: 14vh;
     width: 100%;
     overflow: hidden;
   }
@@ -412,6 +420,11 @@ font-family: 'Playfair Display', serif; */
   .main__contacto .map .googleMaps {
     width: 90%;
     margin: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .footer .redes {
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {

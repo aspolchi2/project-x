@@ -1,6 +1,7 @@
 @import "variables";
 
 .main{
+    
     .whatsapp{
         position: sticky;
         top: 93vh;
@@ -8,13 +9,14 @@
         width: 4rem;
     }
     .video{
+        position: relative;
+        bottom: 10vh;
         width:100%;
-        margin-top: 2vh;
-        
+        margin: 0;        
     }
     .scroll{
         position: relative;
-            bottom: 4rem;
+            bottom: 2rem;
     }
     
     &__nosotros{
@@ -35,7 +37,7 @@
         }
         .id{
             position: relative;
-            bottom: 4rem;
+            bottom: 2rem;
         }
         
     }
@@ -84,13 +86,6 @@
            white-space: pre;
         }
     }
-           
-            .fit{
-                width: 48px;
-            }
-            .bajar{
-                padding: 3px;
-            }
         }
         
     
@@ -141,15 +136,21 @@
                 }
                 .img__box{
                     position: relative;
+                    .efecto{
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            filter: blur(3px);
+                        }
+                    }
                     .cuadrado{
                         background-color: $tituloDos;
                         color: white;
                     }
                     &__texto{
                         position: absolute;
-                        top: 0;
+                        top: 30%;
                         left: 50%;
-                        transform: translate(-50%, 0);
+                        transform: translate(-50%, -50%);
 
                     }
                 }

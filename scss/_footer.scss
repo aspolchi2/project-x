@@ -5,13 +5,20 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15vh;
     grid-template-areas: "copy logo redes";
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 
    
 
     .copy{
         grid-area: copy;
         color: white;
-        margin: auto;
+        margin:auto;
+        text-align: center;
+        p{
+            font-size: 8px;
+        }
         .diff{
             color: $color-secundario;
         }
