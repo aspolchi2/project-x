@@ -114,3 +114,21 @@
 
 }
 }
+@media (min-width: 1000px) and (max-width: 2000px){
+    .main{
+        &__servicios{
+            .ordenar{
+                .servicio{
+                    width: 350px;
+                    .circulo{
+                        width: 150px;
+                        height: 150px;
+                        img{
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
