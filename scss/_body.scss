@@ -17,6 +17,7 @@ body{
 .contenedor::-webkit-scrollbar:vertical {
     width: 10px;
     background-color: $color-principal;
+    
 }
 
 .contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
