@@ -2,15 +2,15 @@
 
 .main{
     .whatsapp{
-        position: fixed;
-        bottom: 0;
+        position: sticky;
+        top: 93vh;
         left: 95%;
         width: 4rem;
     }
     .video{
         width:100%;
-        margin: auto;
-        display: none;
+        margin-top: 2vh;
+        
     }
     .scroll{
         position: relative;
@@ -107,35 +107,63 @@
 
             }
             &__habitaciones{
-               width: 80%;
+               display: grid;
+               grid-template-columns: 22vw 22vw 22vw;
+               grid-template-areas: "first second third";
+               width: 100%;
                margin: auto;
-               display: flex;
-               flex-direction: row;
-               justify-content: space-evenly;
-               .img__box{
-                   position: relative;
-                   display: inline-block;
-                   &__texto{
-                       position: absolute;
-                       top: 20%;
-                       left: 50%;
-                       transform: translate(-50%, 0);
-                   }
-               }
+               align-content: center;
+               justify-content: center;
+               align-items: start;
                
+               
+               
+               .first{
+                   grid-area: first;
+                
+               }
+               .second{
+                grid-area: second;
+                }
+                .third{
+                grid-area: third;
+                }
+                .img__box{
+                    width: 90%;
+                    margin: auto;
+                }
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    
+                }
+                .img__box{
+                    position: relative;
+                    .cuadrado{
+                        background-color: $tituloDos;
+                        color: white;
+                    }
+                    &__texto{
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+
+                    }
+                }
+                li{
+                    margin: 1vh 0;
+                }
+            }
             
-        
-           
-           
-                   
-             
-            }
-            .fix{
-                transform: scale(1.5);
-                margin-top: 6rem;
-            }
         }
         .main__contacto{
+            h2{
+                color: $tituloDos;
+                margin: 3rem;
+            }
             .scroll{
                 position: relative;
                 bottom: 6rem;
@@ -147,9 +175,10 @@
             grid-template-areas: "achicar info";
             width: 60%;
             margin: auto;
+            gap: 50px;
 
             .achicar{
-            width: 80%;
+            width: 100%;
             height: 430px;
             overflow: hidden;
             grid-area: achicar;
@@ -169,7 +198,7 @@
                 
                 p{
                     width: 85%;
-                    margin: auto;
+                    margin: 10px auto;
                     img{
                         margin-right: 1rem;
                     }

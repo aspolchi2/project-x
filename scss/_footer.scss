@@ -1,4 +1,47 @@
 .footer{
-    height: 10vh;
-    background-color: black;
+    
+    background-color: $color-principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh;
+    grid-template-areas: "copy logo redes";
+
+   
+
+    .copy{
+        grid-area: copy;
+        color: white;
+        margin: auto;
+        .diff{
+            color: $color-secundario;
+        }
+    }
+    .logo{
+        grid-area: logo;
+        margin: auto;
+        img{
+            height: 15vh;
+        }
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: white;
+        position: relative;
+        left: 45%;
+        overflow: hidden;
+        width: 35%;
+        
+        
+        img{
+            height: 3vh;
+            margin: 1vh;
+            
+        }
+    }
+    .limit{
+        position: relative;
+    }
 }

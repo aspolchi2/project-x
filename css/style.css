@@ -6,10 +6,11 @@ header .navbardos {
   z-index: 1;
   opacity: .95;
   margin: 0;
+  height: 8.5vh;
 }
 
 header .navbardos .navImg {
-  width: 10rem;
+  width: 15vh;
   position: absolute;
   top: 1vh;
   left: 8.052708638360176vw;
@@ -45,16 +46,16 @@ header .navbardos .navbar__ul li .nav-link {
 }
 
 .main .whatsapp {
-  position: fixed;
-  bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 93vh;
   left: 95%;
   width: 4rem;
 }
 
 .main .video {
   width: 100%;
-  margin: auto;
-  display: none;
+  margin-top: 2vh;
 }
 
 .main .scroll {
@@ -183,37 +184,83 @@ header .navbardos .navbar__ul li .nav-link {
 }
 
 .main__galeria__habitaciones {
-  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 22vw 22vw 22vw;
+      grid-template-columns: 22vw 22vw 22vw;
+      grid-template-areas: "first second third";
+  width: 100%;
   margin: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.main__galeria__habitaciones .first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+}
+
+.main__galeria__habitaciones .second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+}
+
+.main__galeria__habitaciones .third {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: third;
+}
+
+.main__galeria__habitaciones .img__box {
+  width: 90%;
+  margin: auto;
+}
+
+.main__galeria__habitaciones .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__galeria__habitaciones .img__box {
   position: relative;
-  display: inline-block;
+}
+
+.main__galeria__habitaciones .img__box .cuadrado {
+  background-color: #663366;
+  color: white;
 }
 
 .main__galeria__habitaciones .img__box__texto {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 
-.main__galeria .fix {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  margin-top: 6rem;
+.main__galeria__habitaciones li {
+  margin: 1vh 0;
+}
+
+.main .main__contacto h2 {
+  color: #663366;
+  margin: 3rem;
 }
 
 .main .main__contacto .scroll {
@@ -229,10 +276,11 @@ header .navbardos .navbar__ul li .nav-link {
       grid-template-areas: "achicar info";
   width: 60%;
   margin: auto;
+  gap: 50px;
 }
 
 .main .main__contacto__grid .achicar {
-  width: 80%;
+  width: 100%;
   height: 430px;
   overflow: hidden;
   -ms-grid-row: 1;
@@ -265,7 +313,7 @@ header .navbardos .navbar__ul li .nav-link {
 
 .main .main__contacto__grid .info p {
   width: 85%;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .main .main__contacto__grid .info p img {
@@ -347,8 +395,67 @@ body {
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
 .footer {
-  height: 10vh;
-  background-color: black;
+  background-color: #4D4D4D;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 15vh;
+      grid-template-rows: 15vh;
+      grid-template-areas: "copy logo redes";
+}
+
+.footer .copy {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: copy;
+  color: white;
+  margin: auto;
+}
+
+.footer .copy .diff {
+  color: #fffad2;
+}
+
+.footer .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logo;
+  margin: auto;
+}
+
+.footer .logo img {
+  height: 15vh;
+}
+
+.footer .redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: redes;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: white;
+  position: relative;
+  left: 45%;
+  overflow: hidden;
+  width: 35%;
+}
+
+.footer .redes img {
+  height: 3vh;
+  margin: 1vh;
+}
+
+.footer .limit {
+  position: relative;
 }
 
 @media (min-width: 320px) and (max-width: 991.98px) {
