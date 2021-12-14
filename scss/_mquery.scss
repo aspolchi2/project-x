@@ -37,17 +37,12 @@
 
  
     .main{
-        .whatsapp{
-            position: sticky;
-            top: 0;
-            left: 0;
-            
-            
-        }
+        
         width: 100%;
         overflow-x: hidden;
         .video{
-            margin-top: 2rem;
+            position: relative;
+            top: 1rem;
             width: 100%;
             overflow: hidden;
         }

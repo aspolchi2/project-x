@@ -389,14 +389,9 @@ font-family: 'Playfair Display', serif; */
     width: 100%;
     overflow-x: hidden;
   }
-  body .main .whatsapp {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
   body .main .video {
-    margin-top: 2rem;
+    position: relative;
+    top: 1rem;
     width: 100%;
     overflow: hidden;
   }
