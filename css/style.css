@@ -396,11 +396,15 @@ font-family: 'Playfair Display', serif; */
     left: 0;
   }
   body .main .video {
+    margin-top: 2rem;
     width: 100%;
     overflow: hidden;
   }
   body .main .frontPhone {
     display: none;
+  }
+  body .main__nosotros {
+    width: 100%;
   }
   body .main__nosotros__texto {
     display: flex;
