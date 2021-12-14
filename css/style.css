@@ -37,7 +37,7 @@ header .navbardos .navbar__ul li .nav-link {
 .main .whatsapp {
   position: -webkit-sticky;
   position: sticky;
-  top: 93vh;
+  top: 90vh;
   left: 95%;
   width: 4rem;
 }
@@ -261,6 +261,7 @@ header .navbardos .navbar__ul li .nav-link {
 body {
   width: 100%;
   margin: auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contenedor::-webkit-scrollbar {
@@ -329,7 +330,7 @@ font-family: 'Playfair Display', serif; */
   color: white;
   margin: 1rem auto;
   text-align: left;
-  line-height: 0.5rem;
+  line-height: 0.8rem;
 }
 .footer__box .copy p {
   font-size: 0.9rem;
@@ -395,6 +396,12 @@ font-family: 'Playfair Display', serif; */
     width: 100%;
     overflow-x: hidden;
   }
+  body .main .whatsapp {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
   body .main .video {
     width: 100%;
     overflow: hidden;
@@ -408,6 +415,9 @@ font-family: 'Playfair Display', serif; */
   }
   body .main__servicios .ordenar .servicio {
     width: 150px;
+  }
+  body .main__servicios .ordenar .servicio p {
+    font-size: 12px;
   }
   body .main__nosotros__texto {
     width: 100%;
@@ -458,9 +468,12 @@ font-family: 'Playfair Display', serif; */
   body .main .main__contacto .map .googleMaps {
     width: 100%;
   }
-  body .footer__box {
+  body .footer .footer__box {
     display: flex;
     flex-direction: column-reverse;
+  }
+  body .footer .footer__box .redes {
+    letter-spacing: 1px;
   }
 }
 @media (min-width: 992px) and (max-width: 1399.98px) {

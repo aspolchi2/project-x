@@ -37,6 +37,13 @@
 
  
     .main{
+        .whatsapp{
+            position: sticky;
+            top: 0;
+            left: 0;
+            
+            
+        }
         width: 100%;
         overflow-x: hidden;
         .video{
@@ -58,6 +65,9 @@
         .ordenar{
             .servicio{
                 width: 150px;
+                p{
+                    font-size: 12px
+                }
             }
         }
     }
@@ -124,9 +134,12 @@
 
 }
 .footer{
-    &__box{
+    .footer__box{
         display: flex;
         flex-direction: column-reverse;
+        .redes{
+            letter-spacing: 1px;
+        }
     }
 
 }
