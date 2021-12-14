@@ -331,6 +331,10 @@ font-family: 'Playfair Display', serif; */
 .footer__box .copy .diff {
   color: #fffad2;
 }
+.footer__box .copy .copyr {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
 .footer__box .logo {
   grid-area: logo;
   margin: 1rem auto;
@@ -348,6 +352,10 @@ font-family: 'Playfair Display', serif; */
   overflow: hidden;
   margin: 1rem auto;
   line-height: 0.5rem;
+}
+.footer__box .redes a {
+  text-decoration: none;
+  color: white;
 }
 .footer__box .redes img {
   height: 3vh;
