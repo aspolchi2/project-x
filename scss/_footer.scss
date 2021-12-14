@@ -19,6 +19,7 @@
         color: white;
         margin: 1rem auto;
         text-align: left;
+        line-height: 0.5rem;
         p{
             font-size: 0.9rem;
         }
@@ -42,11 +43,12 @@
         position: relative;
         overflow: hidden;
         margin: 1rem auto;
+        line-height: .5rem;
         
         
         img{
             height: 3vh;
-            margin: 1vh;
+            margin: 0.5vh;
             
         }
     }

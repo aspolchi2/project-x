@@ -20,7 +20,7 @@
     }
     
     &__nosotros{
-        width: 80%;
+        width: 70%;
         margin: auto;
         h1{
             color: $tituloDos;
@@ -124,38 +124,75 @@
                 grid-area: third;
                 }
                 .img__box{
-                    width: 90%;
+                    width: 100%;
                     margin: auto;
                 }
                 .box{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    margin: 0 1rem;
+                    .cuadrado{
+                        background-color: $tituloDos;
+                        color: white;
+
+                    }
                     
                     
                 }
                 .img__box{
                     position: relative;
+                    a{
+                    &:hover .search{
+                        transform: rotate(.12turn);
+                        filter: grayscale(0);
+                        opacity: 1;
+                    }
+                    &:hover .search img{
+                        opacity: 1;
+                    }
+                }
+                   
                     .efecto{
-                        filter: grayscale(.5);
+                       
                         transition: all .6s ease-in-out;
                         &:hover{
-                            filter: grayscale(0)
-                            brightness(1.2);
+                            filter: grayscale(1);
                         }
+                       
                     }
-                    .cuadrado{
-                        background-color: $tituloDos;
-                        color: white;
-                    }
+                    
                     &__texto{
                         position: absolute;
-                        top: 30%;
+                        bottom: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        isolation: isolate;
+                        z-index: 1;
+
+                        .search{
+                            isolation: isolate;
+                            width: 50px;
+                            height: 50px;
+                            background-color: $tituloDos;
+                            transition: all 1s ease-in-out;
+                            opacity: 0;
+                            z-index: -1;
+                            img{
+                                position: relative;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 25px;
+                                isolation: isolate;
+                                transition: all 3s ;
+                                opacity: 0;
+                            }
+                        }
 
                     }
                 }
+                
                 li{
                     margin: 1vh 0;
                 }

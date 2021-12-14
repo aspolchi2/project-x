@@ -52,7 +52,7 @@ header .navbardos .navbar__ul li .nav-link {
   bottom: 2rem;
 }
 .main__nosotros {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 .main__nosotros h1 {
@@ -141,33 +141,62 @@ header .navbardos .navbar__ul li .nav-link {
   grid-area: third;
 }
 .main__galeria__habitaciones .img__box {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 .main__galeria__habitaciones .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 1rem;
+}
+.main__galeria__habitaciones .box .cuadrado {
+  background-color: #663366;
+  color: white;
 }
 .main__galeria__habitaciones .img__box {
   position: relative;
 }
+.main__galeria__habitaciones .img__box a:hover .search {
+  transform: rotate(0.12turn);
+  filter: grayscale(0);
+  opacity: 1;
+}
+.main__galeria__habitaciones .img__box a:hover .search img {
+  opacity: 1;
+}
 .main__galeria__habitaciones .img__box .efecto {
-  filter: grayscale(0.5);
   transition: all 0.6s ease-in-out;
 }
 .main__galeria__habitaciones .img__box .efecto:hover {
-  filter: grayscale(0) brightness(1.2);
-}
-.main__galeria__habitaciones .img__box .cuadrado {
-  background-color: #663366;
-  color: white;
+  filter: grayscale(1);
 }
 .main__galeria__habitaciones .img__box__texto {
   position: absolute;
-  top: 30%;
+  bottom: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  isolation: isolate;
+  z-index: 1;
+}
+.main__galeria__habitaciones .img__box__texto .search {
+  isolation: isolate;
+  width: 50px;
+  height: 50px;
+  background-color: #663366;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+.main__galeria__habitaciones .img__box__texto .search img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  isolation: isolate;
+  transition: all 3s;
+  opacity: 0;
 }
 .main__galeria__habitaciones li {
   margin: 1vh 0;
@@ -300,6 +329,7 @@ font-family: 'Playfair Display', serif; */
   color: white;
   margin: 1rem auto;
   text-align: left;
+  line-height: 0.5rem;
 }
 .footer__box .copy p {
   font-size: 0.9rem;
@@ -323,10 +353,11 @@ font-family: 'Playfair Display', serif; */
   position: relative;
   overflow: hidden;
   margin: 1rem auto;
+  line-height: 0.5rem;
 }
 .footer__box .redes img {
   height: 3vh;
-  margin: 1vh;
+  margin: 0.5vh;
 }
 .footer__box .limit {
   position: relative;

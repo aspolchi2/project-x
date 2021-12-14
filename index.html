@@ -70,10 +70,10 @@
       
       
       <section class="main__nosotros">
-        <h1 class=" text-center m-5 gobold">Nosotros</h1>
+        <h1 class=" text-center m-5 gobold animate__animated animate__slideInUp wow">Nosotros</h1>
         
-          <div class="main__nosotros__texto">
-            <div class="parrafos">
+          <div class="main__nosotros__texto ">
+            <div class="parrafos animate__animated animate__slideInLeft wow">
               <p class="fs-5">
                 Los Tilos es un emprendimiento de alquiler vacacional, ubicado en la mejor playa del sur argentino (Monte Hermoso), se inauguró en Noviembre 2021, nos encontramos en un entorno de naturaleza, rodeado de árboles, en la mejor zona del balneario (Las Dunas).
               </p>
@@ -81,14 +81,14 @@
             </div>
           
           
-          <div class="">
+          <div class=" animate__animated animate__slideInRight wow">
             <img src="./img/fotos-polaroid.png" class="img-fluid" alt="">
           </div>
         </div>
         <span id="servicios" class="id"></span>
       </section>
       <section class="main__servicios pt-3 pb-3 ">
-        <h2 class="text-center gobold mt-5 pb-5">Servicios</h2>
+        <h2 class="text-center gobold mt-5 pb-5 animate__animated animate__slideInUp wow">Servicios</h2>
         <div class="ordenar mb-5">
           <div class="servicio wow animate__animated animate__zoomIn " data-wow-delay=".5s">
             <div class="circulo">
@@ -179,14 +179,16 @@ en todos los ambientes</p>
       </section>
       <section class="main__galeria container-fluid">
         <span id="galeria" class="scroll"></span>
-        <h2 class="text-center color gobold">Galeria</h2>
+        <h2 class="text-center color gobold animate__animated animate__slideInUp wow">Galeria</h2>
        <div class="main__galeria__habitaciones">
-        <div class=" box first">
+        <div class=" box first animate__animated animate__slideInUp wow">
           <div class="img__box">
-            <img src="./img/diferentesAmbientes/diferentesAmbientes.jpg" class="img-fluid efecto" alt="">
-            <div class="img__box__texto"> <p class="fs-3">Ver Mas</p>
-          </div>
-          <p class="fs-4 text-center cuadrado">DIFERENTES AMBIENTES</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#difAmb"><img src="./img/diferentesAmbientes/diferentesAmbientes.jpg" class="img-fluid efecto" alt="">
+              <div class="img__box__texto"> <div class="search"><img src="./pictos/search.svg" alt=""></div>
+            </div>
+          </a>
+        </div>
+          <p class="fs-5 text-center cuadrado">DIFERENTES AMBIENTES</p>
           <ul>
             <li>Cocina totalmente equipada para cocinar, lavarropa, heladera con frezzer y
               
@@ -202,16 +204,164 @@ en todos los ambientes</p>
               calefactor.</li>
             
           </ul>
-         </div>
+          <!-- modal  -->
+          <div class="modal fade" id="difAmb" tabindex="-1" aria-labelledby="diferentes" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="diferentes">DIFERENTES AMBIENTES</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/diferentesAmbientes/8.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/9.jpg" class="d-block w-100" alt="Patio">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/10.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/11.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/12.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/13.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/14.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/15.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/16.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/17.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/18.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/19.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/20.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/21.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/22.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/23.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/24.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/25.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/28.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/30.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/32.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/33.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/35.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/36.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/37.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/38.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/39.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/40.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/41.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/42.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/43.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/44.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/45.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/FOTO-FALTANTE-2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/FOTO-FALTANTE-3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/FOTOS-FALTANTES.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/NUEVO-1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/NUEVO-3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/diferentesAmbientes/NUEVO.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         
         </div>
           
          
-         <div class=" box second">
+         <div class=" box second animate__animated animate__slideInUp wow" data-wow-delay=".3s">
           <div class="img__box">
-            <img src="./img/matrimonial/matrimonial-portada.jpg" class="img-fluid efecto" alt="">
-            <div class="img__box__texto"> <p class="fs-3">Ver Mas</p>
-          </div>
-          <p class="fs-4 text-center cuadrado">DORMITORIOS</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#matrimonial"><img src="./img/matrimonial/matrimonial-portada.jpg" class="img-fluid efecto" alt="">
+              <div class="img__box__texto"> <div class="search"><img src="./pictos/search.svg" alt=""></div>
+            </div>
+          </a>
+        </div>
+          <p class="fs-5 text-center cuadrado">DORMITORIOS</p>
           <ul>
             <li>Cada duplex cuenta con dos dormitorios.</li>
             <li>1er Dormitorio, cuenta con cama matri-
@@ -225,16 +375,70 @@ en todos los ambientes</p>
               luz, ropero y aire acondicionado.</li>
               
           </ul>
+        <!-- Modal -->
+<div class="modal fade" id="matrimonial" tabindex="-1" aria-labelledby="matri" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="matri">DORMITORIOS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="matriControl" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/matrimonial/matrimonial.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/matrimonialDos.jpg" class="d-block w-100" alt="Patio">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/roomDoble.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/roomDobledos.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/roomDobleotro.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/otro.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/otroangulo.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/matrimonial/tv.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#matriControl" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#matriControl" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
           
          </div>
           
-          <div class=" box third">
+          <div class=" box third animate__animated animate__slideInUp wow " data-wow-delay=".6s">
             <div class="img__box">
-              <img src="./img/espaciosComunes/espaciosComunes-portada.jpg" class="img-fluid efecto" alt="">
-              <div class="img__box__texto"> <p class="fs-3">Ver Mas</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#areaCompartidas"><img src="./img/espaciosComunes/espaciosComunes-portada.jpg" class="img-fluid efecto" alt="">
+              <div class="img__box__texto"> <div class="search"><img src="./pictos/search.svg" alt=""></div>
             </div>
-            <p class="fs-4 text-center cuadrado">AREAS COMPARTIDAS</p>
+          </a>
+          </div>
+            <p class="fs-5 text-center cuadrado">AREAS COMPARTIDAS</p>
             <ul>
               <li>Patio parquizado con pileta de 3x9mts, en
 
@@ -248,8 +452,62 @@ en todos los ambientes</p>
                 
                 quincho.</li>
             </ul>
-           </div>
+           
             </div>
+            <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="areaCompartidas" tabindex="-1" aria-labelledby="areaCompar" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="areaCompar">AREAS COMPARTIDAS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="areaComparControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/espaciosComunes/10.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/patio.jpg" class="d-block w-100" alt="Patio">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/pileta.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/piletaTragos.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/quincho.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/mesaQuincho.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/mesaquinchoperfil.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/espaciosComunes/mesaquinchonoche.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#areaComparControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#areaComparControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div >
         
       
@@ -257,9 +515,9 @@ en todos los ambientes</p>
 
       <section class="main__contacto">
         <span id="contacto" class="scroll"></span>
-        <h2 class="text-center gobold mt-5 mb-5">Contactenos</h2>
+        <h2 class="text-center gobold mt-5 mb-5 animate__animated animate__slideInUp wow">Contactenos</h2>
         <div class="main__contacto__grid">
-       <div class="achicar">
+       <div class="achicar animate__animated animate__slideInLeft wow ">
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
         <script>
           hbspt.forms.create({
@@ -268,7 +526,7 @@ en todos los ambientes</p>
           formId: "cad63f27-2692-4465-98dc-13a9db10deb4"
         });
         </script></div>
-        <div class="info">
+        <div class="info animate__animated animate__slideInRight wow">
         <p><img src="./img/map-marker-2-16.png" alt=""> Del Salmon 1365 - Monte hermoso - <br> Buenos aires - Argentina</p>
         <p><img src="./img/check_white_24dp.svg" alt=""> Check-in: 15:00 hs</p>
         <p><img src="./img/logout_white_24dp.svg" alt=""> Check-out: 11:00 hs</p>
