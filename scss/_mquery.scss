@@ -2,27 +2,39 @@
     body{
         width: 100%;
         overflow-x: hidden;
+        
         .infinite{
             font-size: 2rem;
-        }
-    }  
+            }  
     .header{
         .navbardos{
             z-index: 1;
-            opacity: 0.95;
-            .navbar__ul{
+            width: 100%;
+            .container-fluid{
+                background-color: $color-principal;
+            
+            }
+                .navbar__ul{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
+                background-color: $color-principal;
+                margin-top: 5px;
+                padding: 0 30px;
             }
             li{
-                padding: 0;
+                padding: 0 50px;
             }
-            
-        }
         
     }
+            
+        
+        
+    }
+
+
  
     .main{
         width: 100%;
@@ -81,44 +93,56 @@
         transform: scale(1.1);
     }
 }
-    &__contacto{
+    .main__contacto{
         width: 100%;
         h2{
             font-size: 2rem;
         }
-        &__grid{
+        .main__contacto__grid{
+           display: flex;
+           flex-direction: column-reverse;
             .achicar{
                 width: 90%;
             }
             margin: auto;
             
             width: 90%;
-            display: flex;
-            flex-direction: column-reverse;
+            
             .info{
                 margin: 1rem 0;
             
             }
         }
         .map{
-            width: 90%;
-            margin: auto;
-        .googleMaps{
-            width: 90%;
-            margin: 0;
+            width: 100%;
+            .googleMaps{
+            width: 100%;
+            }
         }
     }
+
+
 }
+.footer{
+    &__box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-
+}
 }
 }
 @media (min-width: 992px) and (max-width: 1399.98px){
+    
     .footer{
+        &__box{
+            width: 90%;
+            margin: auto;
         .redes{
-            width: 100%;
+            width: 60%;
             
         }
+     }
     }
 }
 
