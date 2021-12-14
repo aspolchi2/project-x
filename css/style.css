@@ -34,13 +34,6 @@ header .navbardos .navbar__ul li .nav-link {
   color: #fffad2;
 }
 
-.main .whatsapp {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 90vh;
-  left: 95%;
-  width: 4rem;
-}
 .main .video {
   position: relative;
   bottom: 10vh;
