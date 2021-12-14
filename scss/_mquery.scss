@@ -90,15 +90,14 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        .wfix{
-            width: 95%;
-            opacity: 1;
+       .box{
+           .scale{
+           transform: scale(1.1);
         }
+       }
         
     }
-    .fix{
-        transform: scale(1.1);
-    }
+    
 }
     .main__contacto{
         width: 100%;

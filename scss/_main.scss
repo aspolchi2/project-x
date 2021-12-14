@@ -127,6 +127,10 @@
                     flex-direction: column;
                     justify-content: center;
                     margin: 0 1rem;
+                    .scale{
+                        top: 20%;
+                        transform: scale(2);
+                    }
                     .cuadrado{
                         background-color: $tituloDos;
                         color: white;
