@@ -73,12 +73,16 @@
     &__nosotros{
         &__texto{
         width: 100%;
-        .esconder{
+        .cartel{
             display: none;
-            
         }
-        .img-fluid{
+        .esconder{
+/*             display: none;
+ */            
+        }
+        .foto{
             width: 100%;
+            
         }
     }
 }

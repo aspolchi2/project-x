@@ -57,8 +57,19 @@ header .navbardos .navbar__ul li .nav-link {
   flex-direction: row;
 }
 .main__nosotros__texto .parrafos {
-  width: 80%;
+  width: 70%;
   margin: auto;
+  text-align: center;
+}
+.main__nosotros__texto .parrafos .cartel {
+  width: 100%;
+}
+.main__nosotros__texto .parrafos .esconder {
+  margin-top: 3rem;
+  font-size: 12px;
+}
+.main__nosotros__texto .foto {
+  width: 80%;
 }
 .main__nosotros .id {
   position: relative;
@@ -190,7 +201,7 @@ header .navbardos .navbar__ul li .nav-link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25px;
+  width: 40px;
   isolation: isolate;
   transition: all 3s;
   opacity: 0;
@@ -426,10 +437,14 @@ font-family: 'Playfair Display', serif; */
   body .main__nosotros__texto {
     width: 100%;
   }
-  body .main__nosotros__texto .esconder {
+  body .main__nosotros__texto .cartel {
     display: none;
   }
-  body .main__nosotros__texto .img-fluid {
+  body .main__nosotros__texto .esconder {
+    /*             display: none;
+     */
+  }
+  body .main__nosotros__texto .foto {
     width: 100%;
   }
   body .main__galeria {
