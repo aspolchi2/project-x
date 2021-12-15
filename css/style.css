@@ -441,6 +441,7 @@ font-family: 'Playfair Display', serif; */
     display: none;
   }
   body .main__nosotros__texto .esconder {
+    margin-top: 1rem;
     /*             display: none;
      */
   }
