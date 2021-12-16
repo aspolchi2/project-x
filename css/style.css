@@ -474,6 +474,7 @@ font-family: 'Playfair Display', serif; */
   }
   body .main .main__contacto .main__contacto__grid .achicar {
     width: 90%;
+    height: 510px;
   }
   body .main .main__contacto .main__contacto__grid .info {
     margin: 1rem 0;
