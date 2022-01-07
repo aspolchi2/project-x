@@ -1,11 +1,7 @@
-.footer{
-    background-color: $color-principal;
+.footer {
+  background-color: $color-principal;
 
-    
-    
-
-   
-&__box{
+  &__box {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,54 +10,52 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    .copy{
-        grid-area: copy;
+    .copy {
+      grid-area: copy;
+      color: white;
+      margin: 1rem auto;
+      text-align: left;
+      line-height: 0.8rem;
+      p {
+        font-size: 0.9rem;
+      }
+      .diff {
+        color: $color-secundario;
+      }
+      .copyr {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+    }
+    .logo {
+      grid-area: logo;
+      margin: 1rem auto;
+      img {
+        width: 8rem;
+      }
+    }
+    .redes {
+      grid-area: redes;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      margin: 1rem auto;
+      line-height: 0.5rem;
+      a {
+        text-decoration: none;
         color: white;
-        margin: 1rem auto;
-        text-align: left;
-        line-height: 0.8rem;
-        p{
-            font-size: 0.9rem;
-        }
-        .diff{
-            color: $color-secundario;
-        }
-        .copyr{
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-        }
+      }
+
+      img {
+        height: 3vh;
+        margin: 0.5vh;
+      }
     }
-    .logo{
-        grid-area: logo;
-        margin: 1rem auto;
-        img{
-            width: 8rem;
-        }
+    .limit {
+      position: relative;
     }
-    .redes{
-       
-        grid-area: redes;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        color: white;
-        position: relative;
-        overflow: hidden;
-        margin: 1rem auto;
-        line-height: .5rem;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        
-        img{
-            height: 3vh;
-            margin: 0.5vh;
-            
-        }
-    }
-    .limit{
-        position: relative;
-    }
-}
+  }
 }
