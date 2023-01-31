@@ -115,7 +115,7 @@ header .navbardos .navbar__ul li .nav-link {
   width: 72px;
 }
 .main__servicios .ordenar .servicio p {
-  white-space: pre;
+  width: 200px;
 }
 .main__galeria .scroll {
   position: relative;
@@ -218,39 +218,56 @@ header .navbardos .navbar__ul li .nav-link {
   bottom: 6rem;
 }
 .main .main__contacto__grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "achicar info";
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   margin: auto;
   gap: 50px;
 }
 .main .main__contacto__grid .achicar {
   width: 100%;
-  height: 430px;
   overflow: hidden;
-  grid-area: achicar;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .main__contacto__grid .achicar .imagenSvgIg {
+  width: 40px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .main__contacto__grid .achicar .contactenos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.main .main__contacto__grid .achicar a {
+  text-decoration: none;
+  color: black;
+}
+.main .main__contacto__grid .achicar p {
+  font-size: 2rem;
 }
 .main .main__contacto__grid .info {
-  grid-area: info;
   background-color: #4D4D4D;
-  height: 90%;
   color: #fffad2;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 10px;
+  gap: 30px;
+  justify-content: space-around;
   align-items: center;
-  border-radius: 1%;
+  padding: 30px 0;
 }
 .main .main__contacto__grid .info p {
-  width: 85%;
-  margin: 10px auto;
+  font-size: 1rem;
 }
 .main .main__contacto__grid .info p img {
-  margin-right: 1rem;
+  margin-right: 0.2rem;
 }
 .main .main__contacto .map {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 .main .main__contacto .map .googleMaps {
