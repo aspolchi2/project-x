@@ -486,26 +486,23 @@ font-family: 'Playfair Display', serif; */
   }
   body .main .main__contacto .main__contacto__grid {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: auto;
-    width: 90%;
+    width: 95%;
   }
   body .main .main__contacto .main__contacto__grid .achicar {
     width: 90%;
-    height: 510px;
+    flex-direction: column;
+    align-items: flex-start;
   }
   body .main .main__contacto .main__contacto__grid .achicar .contactenos {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
   }
-  body .main .main__contacto .main__contacto__grid .info {
-    margin: 1rem 0;
-  }
   body .main .main__contacto .map {
-    width: 100%;
+    width: 95%;
   }
   body .main .main__contacto .map .googleMaps {
     width: 100%;

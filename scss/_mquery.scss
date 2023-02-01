@@ -1,181 +1,165 @@
-@media (min-width: 320px) and (max-width: 991.98px) {   
-    body{
-        width: 100%;
-        overflow-x: hidden;
-        
-        .infinite{
-            font-size: 2rem;
-            }  
-    .header{
-        .navbardos{
-            z-index: 1;
-            width: 100%;
-            .container-fluid{
-                background-color: $color-principal;
-            
-            }
-                .navbar__ul{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                background-color: $color-principal;
-                margin-top: 5px;
-                padding: 0 30px;
-            }
-            li{
-                padding: 0 50px;
-            }
-        
-    }
-            
-        
-        
-    }
+@media (min-width: 320px) and (max-width: 991.98px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
 
-
- 
-    .main{
-        
+    .infinite {
+      font-size: 2rem;
+    }
+    .header {
+      .navbardos {
+        z-index: 1;
         width: 100%;
-        overflow-x: hidden;
-        .video{
-            position: relative;
-            top: 1rem;
-            width: 100%;
-            overflow: hidden;
+        .container-fluid {
+          background-color: $color-principal;
         }
-        .frontPhone{
+        .navbar__ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background-color: $color-principal;
+          margin-top: 5px;
+          padding: 0 30px;
+        }
+        li {
+          padding: 0 50px;
+        }
+      }
+    }
+
+    .main {
+      width: 100%;
+      overflow-x: hidden;
+      .video {
+        position: relative;
+        top: 1rem;
+        width: 100%;
+        overflow: hidden;
+      }
+      .frontPhone {
+        display: none;
+      }
+
+      &__nosotros {
+        width: 100%;
+        &__texto {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &__servicios {
+        .ordenar {
+          .servicio {
+            width: 150px;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      &__nosotros {
+        &__texto {
+          width: 100%;
+          .cartel {
             display: none;
-        }
-
-    &__nosotros{
-        width: 100%;
-        &__texto{
-        display: flex;
-        flex-direction: column;
-    }
-}
-        
-    &__servicios{
-        .ordenar{
-            .servicio{
-                width: 150px;
-                p{
-                    font-size: 12px
-                }
-            }
-        }
-    }
-
-
-    &__nosotros{
-        &__texto{
-        width: 100%;
-        .cartel{
-            display: none;
-        }
-        .esconder{
+          }
+          .esconder {
             margin-top: 1rem;
-/*             display: none;
- */            
-        }
-        .foto{
+            /*             display: none;
+ */
+          }
+          .foto {
             width: 100%;
-            
+          }
         }
-    }
-}
-    
-    &__galeria{
+      }
+
+      &__galeria {
         display: flex;
         flex-direction: column;
-    &__habitaciones{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-       .box{
-           .scale{
-           transform: scale(1.1);
-        }
-       }
-        
-    }
-    
-}
-    .main__contacto{
-        width: 100%;
-        h2{
-            font-size: 2rem;
-        }
-        .main__contacto__grid{
-           display: flex;
-           flex-direction: column-reverse;
-            .achicar{
-                width: 90%;
-                height: 510px;
+        &__habitaciones {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .box {
+            .scale {
+              transform: scale(1.1);
             }
-            margin: auto;
-            
+          }
+        }
+      }
+      .main__contacto {
+        width: 100%;
+        h2 {
+          font-size: 2rem;
+        }
+        .main__contacto__grid {
+          display: flex;
+          flex-direction: column;
+          .achicar {
             width: 90%;
-            
-            .info{
-                margin: 1rem 0;
-            
-            }
+            flex-direction: column;
+            align-items: flex-start;
+            .contactenos{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 1rem;
+              }
+          }
+          margin: auto;
+          width: 95%;
         }
-        .map{
+        .map {
+          width: 95%;
+          .googleMaps {
             width: 100%;
-            .googleMaps{
-            width: 100%;
-            }
+          }
         }
+      }
     }
-
-
-}
-.footer{
-    .footer__box{
+    .footer {
+      .footer__box {
         display: flex;
         flex-direction: column-reverse;
-        .redes{
-            letter-spacing: 1px;
+        .redes {
+          letter-spacing: 1px;
         }
+      }
     }
-
+  }
 }
-}
-}
-@media (min-width: 992px) and (max-width: 1399.98px){
-    
-    .footer{
-        &__box{
-            width: 90%;
-            margin: auto;
-        .redes{
-            width: 60%;
-            
-        }
-     }
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .footer {
+    &__box {
+      width: 90%;
+      margin: auto;
+      .redes {
+        width: 60%;
+      }
     }
+  }
 }
 
-@media (min-width: 1400px){
-    .main{
-        &__servicios{
-            .ordenar{
-                .servicio{
-                    width: 350px;
-                    .circulo{
-                        width: 150px;
-                        height: 150px;
-                        img{
-                            width: 100px;
-                        }
-                    }
-                }
+@media (min-width: 1400px) {
+  .main {
+    &__servicios {
+      .ordenar {
+        .servicio {
+          width: 350px;
+          .circulo {
+            width: 150px;
+            height: 150px;
+            img {
+              width: 100px;
             }
+          }
         }
+      }
     }
+  }
 }
