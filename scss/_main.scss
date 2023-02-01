@@ -227,18 +227,19 @@
           color: black;
         }
         p{
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
       .info {
         background-color: $color-principal;
         color: $color-secundario;
-        display: flex;
         border-radius: 10px;
         gap: 30px;
-        justify-content: space-around;
-        align-items: center;
-        padding: 30px 0;
+        padding: 30px 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-content: center;
         p {
           font-size: 1rem;
           img {

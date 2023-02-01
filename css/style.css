@@ -248,17 +248,18 @@ header .navbardos .navbar__ul li .nav-link {
   color: black;
 }
 .main .main__contacto__grid .achicar p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .main .main__contacto__grid .info {
   background-color: #4D4D4D;
   color: #fffad2;
-  display: flex;
   border-radius: 10px;
   gap: 30px;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px 0;
+  padding: 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
 }
 .main .main__contacto__grid .info p {
   font-size: 1rem;
